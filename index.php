@@ -75,14 +75,17 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
         
         <main>
 
-            <?php foreach ($faqs as $faq) { ?>
-                <h2><?php echo $faq["question"]; ?></h2>
-                <?php for ($i = 0; $i < count($faq['answer']); $i++) { ?>
-                    <p>
-                        <p><?php echo $faq["answer"][$i]; ?></p>
-                    </p>
+            <div class="container">
+                <?php foreach ($faqs as $faq) { ?>
+                    <h2><?php echo $faq["question"]; ?></h2>
+                    <?php for ($i = 0; $i < count($faq['answer']); $i++) { ?>
+                        <p>
+                            <?php echo $faq["answer"][$i]; ?>
+                        </p>
+                    <?php } ?>
                 <?php } ?>
-            <?php } ?>
+            </div>
+
         </main>
 
         
