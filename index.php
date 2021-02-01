@@ -88,6 +88,26 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
 
         </main>
 
+        <footer>
+            <div class="container">
+                <div class="footer_left">
+                    <ul>
+                        <li>Google</li>
+                        <li>Tutto su Google </li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <select name="" id="">
+                        <option value="">Italiano</option>
+                        <option value="">English</option>
+                        <option value="">Deutsch</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+
         
     </body>
 </html>

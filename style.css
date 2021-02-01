@@ -59,3 +59,25 @@ h3, p, a {
 .container h2, .container p {
     padding-bottom: 2rem;
 }
+
+footer {
+    background-color: #f5f5f5;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    color: #5f6368;
+    padding-right: .5rem;
+    font-size: 0.75rem;
+}
