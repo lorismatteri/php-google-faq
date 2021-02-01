@@ -47,19 +47,43 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        
+        <title>FAQ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
+
+        <header>
+            <div class="title">
+                <img src="googlelogo.png" alt="">
+                <span>
+                    <h3>Domande frequenti</h3>
+                </span>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <?php foreach ($faqs as $faq) { ?>
-            <h2><?php echo $faq["question"]; ?></h2>
-            <?php for ($i = 0; $i < count($faq['answer']); $i++) { ?>
-                <p>
-                    <p><?php echo $faq["answer"][$i]; ?></p>
-                </p>
+        <main>
+
+            <?php foreach ($faqs as $faq) { ?>
+                <h2><?php echo $faq["question"]; ?></h2>
+                <?php for ($i = 0; $i < count($faq['answer']); $i++) { ?>
+                    <p>
+                        <p><?php echo $faq["answer"][$i]; ?></p>
+                    </p>
+                <?php } ?>
             <?php } ?>
-        <?php } ?>
+        </main>
 
         
     </body>
